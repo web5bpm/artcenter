@@ -1,0 +1,526 @@
+.mother-of-carosel {
+    display: flex;
+    gap: 10px;
+    height: 50vh;
+}
+
+.mother-of-carosel>.carousel {
+    width: 50%;
+    height: 100%;
+}
+
+.mother-of-carosel>.carousel>.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.mother-of-carosel>.carousel>.carousel-inner>.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.carousel-caption {
+    background-color: rgba(35, 34, 34, 0.5);
+    padding: 25px 0;
+}
+
+
+.mother-of-carosel>.students {
+    width: 50%;
+    height: 100%;
+    overflow-x: scroll;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mother-of-carosel>.students>h3 {
+    color: black;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    position: sticky;
+    left: 0;
+}
+
+.mother-of-carosel>.students>div {
+    display: flex;
+    align-items: center;
+    height: calc(100% - (8vh + .8rem));
+    gap: 10px;
+}
+
+.mother-of-carosel>.students>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mother-of-carosel>.students>div>div>img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    outline: 3px solid var(--darkColor);
+}
+
+.mother-of-carosel>.students>div>div>div>a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.specialty {
+    padding: 30px 0;
+}
+
+.specialty>h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--darkColor);
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3.5px;
+    font-size: 2.5rem;
+}
+
+.specialty>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(30deg, white 5%, rgb(240, 240, 240) 60%);
+    padding: 60px 20px;
+}
+
+.specialty>div>div {
+    width: 45%;
+    border-bottom: 3px solid var(--lightColor);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.specialty>div>div>h3 {
+    color: var(--darkColor);
+    font-size: 1.85rem;
+    font-weight: 900;
+    width: 50%;
+}
+
+.specialty>div>div>p {
+    width: 50%;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.specialty>div>div>p::first-line {
+    background-color: var(--lightColor);
+    color: white;
+}
+
+.news {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.news>h2 {
+    color: var(--darkColor);
+    text-align: center;
+    font-weight: 900;
+    padding: 25px 0;
+}
+
+.news>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.news>div>div {
+    width: 49%;
+    position: relative;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--lightColor);
+    display: flex;
+    align-items: center;
+}
+
+.news>div>div::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, var(--lightColor) 5%, rgba(0, 0, 0, .4) 60%);
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.news>div>div>div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: relative;
+}
+
+.news>div>div>div>h1 {
+    color: var(--darkColor);
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    text-shadow: 0 0 5px white;
+}
+
+.news>div>div>div>p {
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    height: 90px;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.news>div>div>div>button {
+    background-color: var(--darkColor);
+    padding: 15px;
+    border: 1px solid var(--lightColor);
+    outline: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.news>div>div>div>button:hover {
+    background-color: var(--lightColor);
+}
+
+.news>div>div>div>div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.news>div>div>div>div>* {
+    color: white;
+    font-weight: 900;
+}
+
+
+.news-more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: rgba(35, 34, 34, 0.8);
+    z-index: 100000;
+    padding: 20px 0;
+}
+
+.news-more>i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: var(--darkColor);
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.news-more>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 30px;
+    width: 70%;
+    background-color: rgba(25, 156, 196, .65);
+    border-radius: 15px 0 0 15px;
+    border: 2px solid var(--darkColor);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.news-more>div::-webkit-scrollbar {
+    width: .3rem;
+    height: .3rem;
+}
+
+.news-more>div>h1 {
+    color: white;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+.news-more>div>p {
+    text-align: justify;
+    color: white;
+}
+
+.news-more>div>p>a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    background-color: var(--darkColor);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.news-more>div>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-more>div>div>div {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-bottom: 4px solid var(--darkColor);
+    overflow: hidden;
+}
+
+.news-more>div>div>div::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, white 5%, rgba(0, 0, 0, 0) 60%);
+    z-index: 0;
+}
+
+.news-more>div>div>div::after {
+    content: '';
+    background: linear-gradient(270deg, var(--darkColor), var(--lightColor));
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    rotate: 45deg;
+    border: 2px solid var(--lightColor);
+}
+
+.news-more>div>div>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media(max-width: 1300px) {
+    .news>div>div {
+        width: 48%;
+    }
+
+    .news>div>div>div {
+        padding: 18px;
+        gap: 10px;
+    }
+
+    .news>div>div>div>h1 {
+        padding: 0px 5px;
+        font-size: 1.5rem;
+    }
+
+    .news>div>div>div>p {
+        padding: 0px 5px;
+        height: 90px;
+        overflow: hidden;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 990px) {
+    .specialty>div {
+        justify-content: center;
+    }
+
+    .specialty>div>div {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        align-items: center;
+    }
+
+    .specialty>div>div>h3 {
+        font-size: 1.65rem;
+    }
+
+    .mother-of-carosel {
+        height: 40vh;
+    }
+
+    .mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.carousel-caption {
+        display: block !important;
+    }
+
+    .news-more {
+        top: 61px;
+        height: calc(100vh - 61px);
+    }
+
+    .news-more>div {
+        width: 95%;
+        margin-top: 35px;
+        height: calc(100% - 35px);
+        padding: 40px 15px;
+    }
+
+    .news-more>i {
+        top: 5px;
+        right: 2%;
+    }
+    .news>div>div>div>p{
+        width: 85%;
+    }
+}
+
+
+@media(max-width: 680px) {
+    .mother-of-carosel {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .mother-of-carosel>.carousel {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .mother-of-carosel>.students {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .specialty>div>div>h3 {
+        width: 100%;
+        font-size: 1.65rem;
+    }
+
+    .specialty>div>div>p {
+        width: 100%;
+    }
+
+    .news>div {
+        flex-direction: column;
+    }
+
+    .news>div>div {
+        width: 100%;
+    }
+
+    .news>div>div>div>h1 {
+        font-size: 1.8rem;
+    }
+    .news>div>div>div>p{
+        width: 100%;
+    }
+
+    .news-more>div>div>div {
+        width: 49%;
+        height: 160px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .mother-of-carosel {
+        height: 80vh;
+    }
+
+    .mother-of-carosel>.carousel {
+        height: 60%;
+    }
+
+    .mother-of-carosel>.students {
+        height: 40%;
+    }
+
+    .mother-of-carosel>.students>div>div>img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .mother-of-carosel>.students>div>div>div>a {
+        font-size: 1rem;
+    }
+
+    .mother-of-carosel>.students>div>div>div>span {
+        font-size: .85rem;
+    }
+
+    .news>div>div>div>h1 {
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    .news-more {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+    .news-more>div {
+        width: 98%;
+        padding: 10px;
+        margin-top: 20px;
+        height: calc(100% - 20px);
+    }
+
+    .news-more>i {
+        right: .8%;
+        font-size: 1.8rem;
+    }
+
+    .news-more>div>h1 {
+        font-size: 1.2rem;
+    }
+
+    .news-more>div>p {
+        font-size: .75rem;
+    }
+
+    .news-more>div>div>div {
+        height: 130px;
+    }
+
+    .news-more>div>div>div::after {
+        top: -35px;
+        right: -35px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width: 400px) {
+    .news-more>div>div>div {
+        height: 100px;
+    }
+}
