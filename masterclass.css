@@ -1,0 +1,153 @@
+:root {
+    --size1: 700px;
+    --size2: 400px;
+}
+
+.masterclass {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.masterclass>p {
+    padding: 40px 0 30px;
+    color: var(--darkColor);
+    font-size: 1.35rem;
+    text-align: center;
+    position: sticky;
+    top: 60px;
+    z-index: 10000;
+    background-color: white;
+}
+
+.masterclass>p::first-line {
+    background-color: var(--darkColor);
+    color: white;
+    font-size: 2rem;
+}
+
+.masterclass>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(profil/art-arxa.png);
+    background-size: 270px;
+}
+
+.masterclass>div>div:nth-child(1) {
+    width: var(--size1);
+    height: var(--size2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.masterclass>div>div:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 5px solid var(--darkColor);
+    background: linear-gradient(225deg, rgba(64, 207, 226, .5), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.masterclass>div>div:nth-child(1)>button {
+    color: var(--darkColor);
+    font-weight: 900;
+    border: 2px solid var(--darkColor);
+    outline: none;
+    padding: 15px;
+    background-color: none;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: 1000;
+    box-shadow: 0 2.5px 6px 1px rgb(85, 81, 81);
+}
+
+.masterclass>div>div:nth-child(1)>button:hover {
+    background-color: var(--darkColor);
+    color: white;
+}
+
+.masterclass>div>div:nth-child(2) {
+    width: calc(100% - var(--size1));
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+.masterclass>div>div:nth-child(2)>h3 {
+    color: var(--darkColor);
+    font-weight: 900;
+    text-align: center;
+}
+
+.masterclass>div>div:nth-child(2)>span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--darkColor);
+    padding-bottom: 5px;
+}
+
+.masterclass>div>div:nth-child(2)>p {
+    text-align: justify;
+}
+
+
+
+
+@media(max-width: 1125px) {
+    :root {
+        --size1: 480px;
+        --size2: 330px;
+    }
+}
+
+@media(max-width: 1060px) {
+    .masterclass>div {
+        flex-direction: column;
+    }
+
+    .masterclass>div>div:nth-child(2) {
+        width: var(--size1);
+    }
+}
+
+@media(max-width: 550px) {
+    :root {
+        --size1: 100%;
+        --size2: 280px;
+    }
+
+    .masterclass>p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .masterclass>p::first-line {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 400px) {
+    :root {
+        --size1: 100%;
+        --size2: 220px;
+    }
+
+    .masterclass>div>div:nth-child(2)>p,
+    span {
+        font-size: .9rem;
+    }
+}
+
+@media(max-width: 350px) {
+
+    .masterclass>div>div:nth-child(2)>p,
+    span {
+        font-size: .8rem;
+    }
+}
